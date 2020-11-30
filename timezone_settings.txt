@@ -1,0 +1,13 @@
+To make this change, first open a Terminal window on your Linux system. Run the following command to put the real time clock on the motherboard into local time. Linux will store the time in local time, just like Windows does.
+
+timedatectl set-local-rtc 1 --adjust-system-clock
+
+To check your current settings, run:
+
+timedatectl
+
+If you see “RTC in local TZ: yes”, Linux is set to use the local time zone instead of UTC. The command warns you that this mode is not fully supported and can cause some problems when changing between time zones and with daylight savings time. However, this mode is probably better supported than the UTC option in Windows. If you dual-boot with Windows, Windows will handle daylight savings time for you.
+
+If you ever want to undo this change, run the following command:
+
+timedatectl set-local-rtc 0 --adjust-system-clock
