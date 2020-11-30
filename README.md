@@ -1,2 +1,2 @@
 # ubuntu-timezone-settings
-Allows you to have same time for you system, in dual boot condition.
+Allows you to have same time for your system, in dual boot condition.
